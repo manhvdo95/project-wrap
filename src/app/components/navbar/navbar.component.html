@@ -1,4 +1,8 @@
 <nav mat-tab-nav-bar>
+  <button mat-button class="menu-button">
+    <mat-icon>menu</mat-icon>
+  </button>
+
   <a mat-tab-link
      *ngFor="let link of navLinks"
      [routerLink]="link.path"
