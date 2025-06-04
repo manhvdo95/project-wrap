@@ -1,0 +1,16 @@
+<h1>Categories</h1>
+<div class="category">
+  <div class="category-item" 
+    [class.selected]="selectedIndex === i"
+    *ngFor="let categoryCar of categoryCars; index as i">
+    <img [src]="categoryCar.src" (click)="selectCategory(categoryCar.category, i)"/>
+    <div class="checkmark">&#10003;</div>
+  </div>
+</div>
+<h2>Vinly Wraps</h2>
+<div class="wrap">
+  <div class="wrap-item" *ngFor="let wrap of filterWraps">
+    <img [src]="wrap.src" (click)="openImage(wrap.src)"/>
+    <p>{{wrap.title}}</p>
+  </div>
+</div>

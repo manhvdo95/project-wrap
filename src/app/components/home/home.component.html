@@ -1,1 +1,8 @@
-<p>home works!</p>
+<h1>Project Wrap</h1>
+<app-carousel [items]="cars"></app-carousel>
+<h2>Vinyl Wraps</h2>
+<div class="gallery">
+  <div class="gallery-item" *ngFor="let categoryCar of categoryCars">
+    <img [src]="categoryCar.src" (click)="goToProduct(categoryCar.category)" />
+  </div>
+</div>

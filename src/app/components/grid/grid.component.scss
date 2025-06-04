@@ -1,0 +1,29 @@
+.image-container {
+  position: relative;
+  display: inline-block;
+  margin: 10px;
+  border: 3px solid transparent;
+  cursor: pointer;
+  transition: border 0.3s ease;
+}
+
+.image-container.selected {
+  border: 3px solid #00bfa5; /* Teal border */
+}
+
+.image-container .checkmark {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  background: #00bfa5;
+  color: white;
+  font-size: 16px;
+  padding: 4px 6px;
+  border-radius: 50%;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.image-container.selected .checkmark {
+  opacity: 1;
+}

@@ -18,7 +18,7 @@ export class NavComponent {
 
     navLinks = [
       { path: 'home', label: 'Home' },
-      { path: 'about', label: 'About' },
+      { path: 'product', label: 'Product' },
       { path: 'contact', label: 'Contact' },
     ];
 
